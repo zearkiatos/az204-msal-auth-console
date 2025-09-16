@@ -5,11 +5,11 @@ using Configuration;
 
 namespace MSALAuthConsole
 {
-    class Program
+    static class Program
     {
 
-        private readonly string _clientId = AppConfiguration.ClientId;
-        private readonly string _tenantId = AppConfiguration.TenantId;
+        private static readonly string _clientId = AppConfiguration.ClientId;
+        private static readonly string _tenantId = AppConfiguration.TenantId;
 
         public static async Task Main(string[] args)
         {
